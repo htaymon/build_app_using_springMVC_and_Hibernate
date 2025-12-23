@@ -15,14 +15,18 @@
         <tr>
             <td>First Name:</td>
             <td>
-                <input type="text" th:field="*{firstName}" />
+                <input type="text" th:field="*{firstName}" required
+                       pattern="[A-Za-z]+"
+                       title="First name must contain letters only" />
             </td>
         </tr>
 
         <tr>
             <td>Last Name:</td>
             <td>
-                <input type="text" th:field="*{lastName}" />
+                <input type="text" th:field="*{lastName}" required
+                       pattern="[A-Za-z]+"
+                       title="Last name must contain letters only"/>
             </td>
         </tr>
 
